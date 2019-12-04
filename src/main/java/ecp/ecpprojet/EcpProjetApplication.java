@@ -8,6 +8,8 @@ public class EcpProjetApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EcpProjetApplication.class, args);
+		// tst
+		int i  =0;
 	}
 
 }
