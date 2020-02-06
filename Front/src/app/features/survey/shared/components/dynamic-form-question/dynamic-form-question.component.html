@@ -1,0 +1,8 @@
+<div [formGroup]="form">
+    <label [attr.for]="question.key">{{question.label}}</label>
+    <mat-radio-group class="example-radio-group" [id]="question.key" [formControlName]="question.key">
+        <mat-radio-button class="example-radio-button" *ngFor="let opt of question.options" [value]="opt.value">
+            {{opt.value}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>

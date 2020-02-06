@@ -1,0 +1,47 @@
+<mat-card-content class="mat-card-content">
+    <form [formGroup]="loginFormGroup">
+      <div class="text-center">
+        <img style="width: 250px" alt="Logo IMG" src="https://www.sciencesetavenir.fr/assets/img/2016/05/09/cover-r4x3w400-57dfa861570d2-logo-sante-publique-france.png">
+        <h4 class="m-t-0">{{ 'bienvenue'  }}</h4>
+      </div>
+      <div fxlayout="row" fxlayoutwrap="wrap" style="flex-flow: row wrap; box-sizing: border-box; display: flex;">
+        <div fxflex="100" fxflex.gt-sm="100" fxflex.gt-xs="100"
+          style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%; margin-bottom: 25px">
+          <div class="text-center" fxflex="100" fxflex.gt-sm="100" fxflex.gt-xs="100"
+            style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%;">
+            <mat-form-field appearance="legacy">
+              <mat-label>{{'login'}}</mat-label>
+              <input formControlName="login" matInput placeholder="Login">
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="name">
+                <mat-label>{{'Name'}}</mat-label>
+                <input matInput placeholder="Name">
+                <mat-icon matSuffix>person</mat-icon>
+              </mat-form-field>
+            <mat-form-field appearance="legacy">
+              <mat-label>{{'pwd'}}</mat-label>
+              <input [type]="hide ? 'text' : 'password'" formControlName="password" matInput placeholder="Password">
+              <mat-icon matSuffix (click)="hide = !hide"> {{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+            <mat-error *ngIf="isWrongCredentials">
+              {{ 'wrongCredentialsErr' }}
+            </mat-error>
+          </div>
+        </div>
+        <div class="text-center" fxflex="100" fxflex.gt-sm="100" fxflex.gt-xs="100"
+          style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%;margin-bottom: 25px">
+          <button mat-raised-button (click)="login()" color='primary' [disabled]="loginFormGroup?.get('login')?.value == '' || loginFormGroup?.get('password')?.value == '' ">
+            <mat-icon matSuffix>input</mat-icon>
+            {{ 'logIn' }}
+          </button>
+        </div>
+        <div class="text-center" fxflex="100" fxflex.gt-sm="100" fxflex.gt-xs="100"
+          style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%;">
+          <span>
+            <a routerLink="/authentication/login">{{'Login' }}</a>
+          </span>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>

@@ -1,0 +1,6 @@
+<form  [formGroup]="form">
+    <div *ngFor="let question of questions?.values">
+        <app-dynamic-form-question [question]="question" [form]="form"></app-dynamic-form-question>
+    </div>
+    <button type="submit" (click)="save(questions.id)">Save</button>
+</form>

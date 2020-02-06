@@ -1,0 +1,72 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  .form__confirmation {
+    display: inline-block;
+    margin-right: 12px;
+    min-width: 100px;
+  }
+  
+
+  .mat-raised-button {
+    min-width: 40px!important;
+
+  }
+
+  .class1 {
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  .row {
+    // height: 10px!important;
+
+  }
+  .lang-color {
+    background-color: #bf1d39 ;
+  }
+
+
+  // .mat-button-focus-overlay { border: transparent!important; }
+.mat-18 {
+  margin-bottom: 18px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+.userName {
+  display: flex;align-items: center;height: 27px
+}
+.accNumber {
+  display: flex;align-items: center;    height: 20px;
+}
+.menu {
+  height: 57px;flex-direction: row; box-sizing: border-box; display: flex; place-content: center; align-items: center;
+}
+
+a:hover,
+a:active {
+  color: white;
+  background-color: #007776;
+}
+.col-sm-1 {
+  padding: 0px;
+}
+
+.btn-colr {
+  background-color: #00a4a2
+}
+.num-comptable-selected {
+  color: white;text-align: center;margin-bottom: 0px
+}
+
+.num-comptable {
+  color: black;text-align: center;margin-bottom: 0px
+}

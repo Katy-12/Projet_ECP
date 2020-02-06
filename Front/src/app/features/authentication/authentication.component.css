@@ -1,0 +1,87 @@
+.inner {
+    position: relative;
+    transform: translate(0px, -50%);
+    border: 1px solid #AA0000;
+    top: 50%;
+  }
+mat-card {
+    border: solid 1px #c3c3c3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 400px;
+    min-width: 280px;
+    max-height: 800px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+
+    margin: auto
+}
+mat-form-field {
+    width: 100px;
+
+}
+.something-semantic {
+    display: table;
+    width: 100%;
+  }
+  .something-else-semantic {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+.login-register .login-register-box {
+    max-width: 400px;
+    min-width: 280px;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    align-items: center;
+}
+
+/* .login-register .mat-card {
+    margin: 0px 15px;
+} */
+
+.text-center {
+    text-align: center;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+html body .m-t-0 {
+    margin-top: 0px;
+}
+
+h4 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.mat-card-content, .mat-card-header .mat-card-title, .mat-card-subtitle {
+    font-size: 14px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 1.25em;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 1.25em;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 1.25em;
+}
