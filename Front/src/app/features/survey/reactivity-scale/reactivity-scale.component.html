@@ -1,52 +1,23 @@
 <mat-vertical-stepper>
     <!-- step 1 -->
     <mat-step>
-        <ng-template matStepLabel>Capacité Sensorielle</ng-template>
+        <ng-template matStepLabel>Etat Habituel des Manifestations Oropharyngées</ng-template>
         <app-dynamic-form [questions]="questions1" (saveEvent)='save($event)'></app-dynamic-form>
     </mat-step>
     <!-- step 2 -->
     <mat-step>
-        <ng-template matStepLabel>Capacité Attenttentionnelle</ng-template>
+        <ng-template matStepLabel>Etat Habituel des Mobilités Faciales</ng-template>
         <app-dynamic-form [questions]="questions2" (saveEvent)='save($event)'></app-dynamic-form>
     </mat-step>
     <!-- step 3 -->
     <mat-step>
         <app-dynamic-form [questions]="questions3" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>kMemoire</ng-template>
+        <ng-template matStepLabel>Etat Habituel des Manifestations de Mobilité ou d'immobilite corporelle volontaires</ng-template>
     </mat-step>
     <!-- step 4 -->
     <mat-step>
         <app-dynamic-form [questions]="questions4" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Capacité Communicatives</ng-template>
+        <ng-template matStepLabel>Etat Emotionnel et Affectif: Habituellement la Personne ...</ng-template>
     </mat-step>
-    <!-- step 5 -->
-    <mat-step>
-        <app-dynamic-form [questions]="questions5" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Raisonnement</ng-template>
-    </mat-step>
-    <!-- step 6 -->
-    <mat-step>
-        <app-dynamic-form [questions]="questions6" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Capacité Sapatiales et Temporelles</ng-template>
-    </mat-step>
-    <!-- step 7 -->
-    <mat-step>
-        <app-dynamic-form [questions]="questions7" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Capacités D apprentissage</ng-template>
-    </mat-step>
-    <!-- step 8-->
-    <mat-step>
-        <app-dynamic-form [questions]="questions8" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Competences Socio Emotionnelle</ng-template>
-    </mat-step>
-    <!-- step 9 -->
-    <mat-step>
-        <app-dynamic-form [questions]="questions9" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Manifestation Oropharynges</ng-template>
-    </mat-step>
-    <!-- step 10 -->
-    <mat-step>
-        <app-dynamic-form [questions]="questions10" (saveEvent)='save($event)'></app-dynamic-form>
-        <ng-template matStepLabel>Autres(18)</ng-template>
-    </mat-step>
+    
 </mat-vertical-stepper>

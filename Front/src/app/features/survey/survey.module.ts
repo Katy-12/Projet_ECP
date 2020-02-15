@@ -15,6 +15,7 @@ import { DynamicFormComponent } from './shared/components/dynamic-form/dynamic-f
 import { DynamicFormQuestionComponent } from './shared/components/dynamic-form-question/dynamic-form-question.component';
 import { QuestionService } from './shared/services/question.service';
 import { QuestionServiceReac } from './shared/services/questionReac.service';
+import { QuestionServiceAdd } from './shared/services/questionAdd.service';
 import { StatsComponent } from './stats/stats.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 
@@ -38,7 +39,8 @@ const materialsModules = [
   ],
   providers: [
     QuestionService,
-    QuestionServiceReac
+    QuestionServiceReac,
+    QuestionServiceAdd
 
   ]
 })

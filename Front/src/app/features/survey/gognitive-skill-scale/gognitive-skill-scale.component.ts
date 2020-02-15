@@ -35,14 +35,14 @@ export class GognitiveSkillScaleComponent {
   constructor(service: QuestionService) {
     this.questions1 = service.getQuestions1();
     this.questions2 = service.getQuestions2();
-    this.questions3 = service.getQuestions2();
-    this.questions4 = service.getQuestions2();
-    this.questions5 = service.getQuestions2();
-    this.questions6 = service.getQuestions2();
-    this.questions7 = service.getQuestions2();
-    this.questions8 = service.getQuestions2();
-    this.questions9 = service.getQuestions2();
-    this.questions10 = service.getQuestions2();
+    this.questions3 = service.getQuestions3();
+    this.questions4 = service.getQuestions4();
+    this.questions5 = service.getQuestions5();
+    this.questions6 = service.getQuestions6();
+    this.questions7 = service.getQuestions7();
+    this.questions8 = service.getQuestions8();
+    this.questions9 = service.getQuestions9();
+    this.questions10 = service.getQuestions10();
   }
 
   save(data: any) {

@@ -1,5 +1,8 @@
-<p>additional-scale works!</p>
-
-
-Durant ces 2 derniers mois, la personne a-t-elle vécu l’une des situations suivantes :
-AU COURS DES 2 DERNIERS MOIS, LA PERSONNE…
+<mat-vertical-stepper>
+    <!-- step 1 -->
+    <mat-step>
+        <ng-template matStepLabel>AU COURS DES 2 DERNIERS MOIS, LA PERSONNE…</ng-template>
+        <app-dynamic-form [questions]="questions1" (saveEvent)='save($event)'></app-dynamic-form>
+    </mat-step>
+    
+</mat-vertical-stepper>

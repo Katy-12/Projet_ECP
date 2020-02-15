@@ -156,7 +156,6 @@ getQuestions1() {
 
 // mobilites Corporelle Volontaire
   getQuestions3() {
-    
     return {
       id: 3,
       values: [
@@ -570,6 +569,6 @@ getQuestions1() {
 
       ]
     }
+    }
 
-}
 }
