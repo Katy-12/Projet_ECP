@@ -19,11 +19,11 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
       },
       {
-        path: "survey",
+        path: 'survey',
         loadChildren: () => import('./survey/survey.module').then(m => m.SurveyModule),
       },
       {
-        path: "authentication",
+        path: 'authentication',
         loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule),
       }
     ]

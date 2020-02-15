@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HighchartsChartModule } from 'highcharts-angular';
 
 
-declare var require:any
+declare var require: any;
 @NgModule({
   declarations: [
     AppComponent

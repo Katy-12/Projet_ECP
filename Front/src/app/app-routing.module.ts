@@ -18,7 +18,7 @@ const routes: Routes = [
     loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule),
   },
   // {
-  //   path: '**',  
+  //   path: '**',
   //   // loadChildren: () => import('./shared/components/not-found/not-found.module').then(m => m.NotFoundModule),
 
   // }

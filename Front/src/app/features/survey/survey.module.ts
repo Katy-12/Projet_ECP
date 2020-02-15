@@ -14,6 +14,7 @@ import { MatSelectModule, MatStepperModule, MatButtonModule } from '@angular/mat
 import { DynamicFormComponent } from './shared/components/dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './shared/components/dynamic-form-question/dynamic-form-question.component';
 import { QuestionService } from './shared/services/question.service';
+import { QuestionServiceReac } from './shared/services/questionReac.service';
 import { StatsComponent } from './stats/stats.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 
@@ -24,7 +25,7 @@ const materialsModules = [
   MatSelectModule,
   MatStepperModule,
   MatButtonModule
-]
+];
 @NgModule({
   declarations: [SurveyComponent, ReactivityScaleComponent, GognitiveSkillScaleComponent, AdditionalScaleComponent, QuestionsComponent, DynamicFormComponent, DynamicFormQuestionComponent, StatsComponent],
   imports: [
@@ -36,7 +37,9 @@ const materialsModules = [
     HighchartsChartModule
   ],
   providers: [
-    QuestionService
+    QuestionService,
+    QuestionServiceReac
+
   ]
 })
 export class SurveyModule { }

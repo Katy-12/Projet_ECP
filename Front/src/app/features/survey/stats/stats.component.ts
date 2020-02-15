@@ -13,7 +13,7 @@ export class StatsComponent {
 
   chartOptions: Highcharts.Options = {
     chart: {
-      width: 1100  
+      width: 1100
     },
     xAxis: {
       categories: [

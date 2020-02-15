@@ -20,21 +20,21 @@ export class DynamicFormComponent implements OnInit {
   }
 
   toFormGroup(questions: any) {
-    let group: any = {};
+    const group: any = {};
     questions.values.forEach(question => {
-      group[question.key] = new FormControl(question.value || '', Validators.required)
+      group[question.key] = new FormControl(question.value || '', Validators.required);
     });
     return new FormGroup(group);
   }
 
   save(caytegoryId: any) {
-    const score = this.sum(this.form.value)
-    this.saveEvent.emit({ score: score, id: caytegoryId });
+    const score = this.sum(this.form.value);
+    this.saveEvent.emit({ score, id: caytegoryId });
   }
   public sum(obj) {
-    var sum = 0;
-    for (var el in obj) {
-      if (obj[el] !== "" && obj[el] !== "ne se prononce pas" && obj[el] !== "impossible") {
+    let sum = 0;
+    for (const el in obj) {
+      if (obj[el] !== '' && obj[el] !== 'ne se prononce pas' && obj[el] !== 'impossible') {
         sum += parseFloat(obj[el]);
       }
     }

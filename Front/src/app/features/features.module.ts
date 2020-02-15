@@ -13,7 +13,7 @@ const materialModule = [
   MatButtonModule,
   MatButtonModule,
   MatMenuModule,
-]
+];
 @NgModule({
   declarations: [FeaturesComponent],
   imports: [

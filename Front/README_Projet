@@ -1,0 +1,11 @@
+Read Me:
+
+Pour exécuter les projet front:
+	Il faut utiliser visual studio code ou dans le terminal, dans le repertoire ou le projet: taper : npm install puis npm start ( cela est possible car le projet ts-node)
+	dans un navigateur web ( de préférence Chrome), taper : Localhost/4200
+
+Pour les différentes techno utilisées:
+Angulaire 8
+highcharts-angular" version 2.4.0, la bibliothèque qui permet la construction du graphe de statistique
+bootstrap 4.4.1 pour CSS
+typescript ( javaScript) 3.5.3
